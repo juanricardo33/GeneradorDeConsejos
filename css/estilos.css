@@ -1,0 +1,125 @@
+/*ESTILOS GENERALES*/
+html, body {
+    height: 100%;
+}
+/*Modificar el modelo de cajas de CSS*/
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+/*resetear margenes y padding*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+}
+.container{
+    /*width: 70%;*/
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*ESTILOS DE LOS CONTENIDOS*/
+
+body{
+    background-color: #202632
+}
+.container{
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+}
+#contenedorPrincipal{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #313847;
+    max-width: 540px;
+    min-width: 540px;
+    min-height: 330px;
+    margin-top: 220px;
+    border-radius: 12px;
+}
+#contenedorTitulo h5 {
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+	margin-top: 50px;
+    color: hsl(150, 100%, 66%);
+}
+#contenedorAdvice{
+    line-height: 1.5em;
+    font-weight: 800;
+    margin-top: 30px;
+    max-width: 90%;
+    color: #cfe4e9;
+    text-align: center;
+    font-size: 26px;
+}
+#imgSeparator {
+	position: absolute;
+	top: 425px;
+	display: block;
+	margin: 38px auto 0;
+}
+#contenedorBoton{
+    position: absolute;
+    top: 520px;
+}
+.btn{
+    background-image: url("/images/icon-dice.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#53ffa9;
+    border-radius: 50%;
+    min-height: 64px;
+    min-width: 64px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0px 0px 40px 4px #53ffa9;
+}
+footer{
+	margin-top: 80px;
+	background: #3D9970;
+	padding: 20px 0;
+}
+#pieDepagina{
+	overflow: hidden;
+}
+.nav {
+	float: left;
+}
+.nav li {
+	display: inline-block;
+	font-size: 0.8rem;
+	padding: 12px 0 0;
+}
+.nav li a {
+	color: #c0bcbc;
+	text-decoration: none;
+	padding-right: 1.5em;
+}
+.nav li a:hover {
+	text-decoration: underline;
+}
+.copyright {
+	float: right;
+	color: #c0bcbc;
+    padding-top: 8px;
+}
+/*Aplicar los siguientes estilos cuando  el tamaño del viewport sea igual o menor a 375px*/
+@media screen and (max-width:375px) {
+    #contenedorPrincipal {
+        max-width: 345px;
+        min-width: 345px;
+    }
+}
