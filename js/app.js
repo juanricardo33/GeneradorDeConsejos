@@ -7,6 +7,7 @@ const numberAdvice = document.querySelector("#numberAdvice")
 //Eventos
 eventListeners();
 function eventListeners(){
+    document.addEventListener("DOMContentLoaded", obtenerDatos)
     btnGenerarAdvice.addEventListener("click", obtenerDatos);
 }
 

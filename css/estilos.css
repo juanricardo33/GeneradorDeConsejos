@@ -116,8 +116,8 @@ footer{
 	color: #c0bcbc;
     padding-top: 8px;
 }
-/*Aplicar los siguientes estilos cuando  el tamaño del viewport sea igual o menor a 375px*/
-@media screen and (max-width:375px) {
+/*Aplicar los siguientes estilos cuando  el tamaño del viewport sea igual o menor a 560px*/
+@media screen and (max-width:560px) {
     #contenedorPrincipal {
         max-width: 345px;
         min-width: 345px;
